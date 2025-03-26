@@ -89,7 +89,7 @@ export default function Chat() {
       <div className="sticky top-5 hidden w-full justify-between px-5 xl:flex">
         <div className="flex space-x-4">
           <a
-            href="/deploy"
+            href="https://sdk.vercel.ai/"
             target="_blank"
             className="rounded-lg p-2 transition-colors duration-200 hover:bg-stone-100"
           >
@@ -316,19 +316,6 @@ export default function Chat() {
           >
             Vercel AI SDK
           </a>
-          .{" "}
-          <a
-            href="https://github.com/Yash-Aanand"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-black"
-          ></a>{" "}
-          <a
-            href="https://vercel.com/templates/next.js/chathn"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-black"
-          ></a>
           .
         </p>
       </div>
