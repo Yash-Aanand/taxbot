@@ -1,7 +1,8 @@
 "use client";
 
+import React from "react";
 import { useRef, useState } from "react";
-import { useChat } from "ai/react";
+import { useChat } from "@ai-sdk/react";
 import va from "@vercel/analytics";
 import clsx from "clsx";
 import { VercelIcon, GithubIcon, LoadingCircle, SendIcon } from "./icons";
@@ -29,20 +30,23 @@ export default function Chat() {
 
   const { messages, input, setInput, handleSubmit, isLoading, append } =
     useChat({
-      onResponse: (response: Response) => {
+      api: "/api/chat", // Ensure this points to your endpoint
+      onResponse: (response) => {
         if (response.status === 429) {
           toast.error("You have reached your request limit for the day.");
           va.track("Rate limited");
           return;
-        } else {
-          va.track("Chat initiated");
         }
+        va.track("Chat initiated");
       },
-      onError: (error: Error) => {
+      onError: (error) => {
         va.track("Chat errored", {
           input,
           error: error.message,
         });
+      },
+      headers: {
+        "Content-Type": "application/json",
       },
     });
 
@@ -161,7 +165,6 @@ export default function Chat() {
           </div>
         ))
       ) : (
-        // Static Splash Screen befoier the first prompt
         <div className="border-gray-200sm:mx-0 mx-5 mt-20 max-w-screen-md rounded-md border sm:w-full">
           <div className="flex flex-col space-y-4 p-7 sm:p-10">
             <h1 className="text-center text-3xl font-bold font-semibold text-black">
@@ -189,8 +192,6 @@ export default function Chat() {
               to help answer your tax-related queries.
             </p>
           </div>
-
-          {/* Example prompts */}
           <div className="flex flex-col space-y-4 border-t border-gray-200 bg-gray-50 p-7 sm:p-10">
             {examples.map((example, i) => (
               <button
@@ -207,7 +208,6 @@ export default function Chat() {
           </div>
         </div>
       )}
-
       <div className="fixed bottom-0 flex w-full flex-col items-center space-y-3 bg-gradient-to-b from-transparent via-gray-100 to-gray-100 p-5 pb-3 sm:px-0">
         {uploadedFile && (
           <div className="flex items-center gap-2 rounded-lg bg-gray-100 px-3 py-2 text-sm">
@@ -316,6 +316,19 @@ export default function Chat() {
           >
             Vercel AI SDK
           </a>
+          .{" "}
+          <a
+            href="https://github.com/Yash-Aanand"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-black"
+          ></a>{" "}
+          <a
+            href="https://vercel.com/templates/next.js/chathn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-black"
+          ></a>
           .
         </p>
       </div>
