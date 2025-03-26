@@ -11,6 +11,7 @@
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#setting-up-locally"><strong>Setting Up Locally</strong></a> ·
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
+  <a href="#notes"><strong>Notes</strong></a> ·
 </p>
 <br/>
 
@@ -50,7 +51,7 @@ ChatH is built on the following stack:
 - [Vercel](https://vercel.com) – deployments
 - [TailwindCSS](https://tailwindcss.com/) – styles
 
-##
+## Notes
 
 Goals Met:
 
