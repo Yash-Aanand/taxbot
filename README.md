@@ -19,6 +19,10 @@
 
 This is an AI chatbot that uses OpenAI Functions and Vercel AI SDK to help answer your tax-related queries.
 
+
+https://github.com/user-attachments/assets/79e9969f-60ef-455b-838b-2888e8ed1c35
+
+
 ## Setting Up Locally
 
 To set up Taxbot locally, follow these steps:
