@@ -1,7 +1,7 @@
-<a href="https://chathn.vercel.app">
+
   <img alt="Chat with Taxbot." src="/app/opengraph-image.png">
   <h1 align="center">Taxbot</h1>
-</a>
+
 
 <p align="center">
   Chat with Taxbot. Built with OpenAI Functions and Vercel AI SDK. 
@@ -66,16 +66,16 @@ Goals Met:
 
 Assumptions Made:
 
-- Regular gpt 3.5-turbo compatible openai api keys used
+- Regular GPT 3.5-turbo compatible openai api keys used
 
 ```
-Text responses are preffered over multimodal responses, which can be adjusted accordingly
+Text responses are preferred over multimodal responses, which can be adjusted accordingly
 ```
 
 - No upper limit for prompts/hour (although spam prompting has been disabled)
 
 ```
-A buffer does already exist, but manually coding a breakpoint could completey avoid any complications
+A buffer already exists, but manually coding a breakpoint could completely avoid any complications
 ```
 
 Placeholders/Simulations:
@@ -83,13 +83,13 @@ Placeholders/Simulations:
 - File processing (in case no premium api keys available)
 
 ```
-This can be expanded upon by fully utlizing the Multi-Modal AI SDK tools, alongside an openai API key compatible with gpt 4o
+This can be expanded upon by fully utilizing the Multi-Modal AI SDK tools, alongside an OpenAI API key compatible with GPT-4o
 ```
 
 - Suggestion Prompts
 
 ```
-Could be expanded by hidden querrying the bot to suggest prompts based on the message history for more useful prompts
+Could be expanded by hidden querying the bot to suggest prompts based on the message history for more useful prompts
 ```
 
 ## Author
