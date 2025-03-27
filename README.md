@@ -1,7 +1,7 @@
-<a href="https://chathn.vercel.app">
+
   <img alt="Chat with Taxbot." src="/app/opengraph-image.png">
   <h1 align="center">Taxbot</h1>
-</a>
+
 
 <p align="center">
   Chat with Taxbot. Built with OpenAI Functions and Vercel AI SDK. 
