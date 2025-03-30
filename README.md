@@ -45,7 +45,7 @@ To set up Taxbot locally, follow these steps:
 
 ## Tech Stack
 
-ChatH is built on the following stack:
+Taxbot is built on the following stack:
 
 - [Next.js](https://nextjs.org/) – framework
 - [TanStack](https://tanstack.com/) - library
