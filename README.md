@@ -11,7 +11,6 @@
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#setting-up-locally"><strong>Setting Up Locally</strong></a> ·
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
-  <a href="#notes"><strong>Notes</strong></a> ·
 </p>
 <br/>
 
@@ -55,42 +54,6 @@ ChatH is built on the following stack:
 - [Vercel](https://vercel.com) – deployments
 - [TailwindCSS](https://tailwindcss.com/) – styles
 
-## Notes
-
-Goals Met:
-
-- Working Application fulfilling requirements
-- Tech Stack Maintained
-- Task 1 Completed
-- Task 2 Completed
-
-Assumptions Made:
-
-- Regular GPT 3.5-turbo compatible openai api keys used
-
-```
-Text responses are preferred over multimodal responses, which can be adjusted accordingly
-```
-
-- No upper limit for prompts/hour (although spam prompting has been disabled)
-
-```
-A buffer already exists, but manually coding a breakpoint could completely avoid any complications
-```
-
-Placeholders/Simulations:
-
-- File processing (in case no premium api keys available)
-
-```
-This can be expanded upon by fully utilizing the Multi-Modal AI SDK tools, alongside an OpenAI API key compatible with GPT-4o
-```
-
-- Suggestion Prompts
-
-```
-Could be expanded by hidden querying the bot to suggest prompts based on the message history for more useful prompts
-```
 
 ## Author
 
