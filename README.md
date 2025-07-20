@@ -54,6 +54,23 @@ Taxbot is built on the following stack:
 - [Vercel](https://vercel.com) – deployments
 - [TailwindCSS](https://tailwindcss.com/) – styles
 
+---
+
+## 🔐 License
+
+MIT — free to use, modify, and distribute.
+
+---
+
+## 👨‍💻 Author
+
+**Yash Aanand**  
+Computer Science @ University of Waterloo  
+
+- 🌐 [yashaanand.com](https://yashaanand.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/yash-aanand-35192b273/)
+- 🛠️ [GitHub](https://github.com/Yash-Aanand)
+
 
 ## Author
 
